@@ -1,0 +1,5 @@
+import {Link} from "react-router-dom";
+import {Clock,MapPinned,Wallet,ArrowRight} from "lucide-react";
+import {itineraries} from "../data/itineraries";
+import TourismAgent from "../components/TourismAgent";
+export default function Itineraries(){return <><div className="page-hero"><div className="container"><span className="eyebrow">TRAVEL INSPIRATION</span><h1>Itineraries</h1><p>Thoughtfully shaped routes to help you start planning.</p></div></div><main className="section"><div className="container itinerary-grid">{itineraries.map(i=><article className="itinerary-card" key={i.id}><div className="it-number">0{i.id}</div><span className="eyebrow">SUGGESTED ROUTE</span><h2>{i.title}</h2><p>{i.highlights}</p><div className="it-meta"><span><Clock/>{i.duration}</span><span><Wallet/>{i.budget}</span></div><div className="places-row">{i.places.map(p=><span key={p}><MapPinned size={14}/>{p}</span>)}</div><Link className="text-link" to="/plan-trip">Plan a trip like this <ArrowRight size={16}/></Link></article>)}</div><div className="container agent-wrap"><TourismAgent/></div></main></>;}

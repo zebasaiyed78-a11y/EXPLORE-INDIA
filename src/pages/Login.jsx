@@ -1,0 +1,4 @@
+import {useState} from "react";
+import {Link,useNavigate} from "react-router-dom";
+import {loginUser} from "../services/userService";
+export default function Login(){const [form,setForm]=useState({email:"",password:""});const nav=useNavigate();const submit=async e=>{e.preventDefault();await loginUser(form);nav("/")};return <div className="auth-page"><div className="auth-card"><span className="eyebrow">WELCOME BACK</span><h1>Continue your journey.</h1><p>Sign in to save destinations and plans.</p><form onSubmit={submit}><label>Email<input type="email" required value={form.email} onChange={e=>setForm({...form,email:e.target.value})}/></label><label>Password<input type="password" required value={form.password} onChange={e=>setForm({...form,password:e.target.value})}/></label><button className="btn full">Login</button></form><p className="auth-switch">Don't have an account? <Link to="/signup">Create account</Link></p></div></div>}

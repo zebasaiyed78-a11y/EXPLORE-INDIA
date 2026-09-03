@@ -1,0 +1,7 @@
+export const states = [
+  {name:"Goa",capital:"Panaji",description:"A coastal state known for beaches, seafood, heritage and lively culture.",image:"https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=85",bestTime:"November – February"},
+  {name:"Rajasthan",capital:"Jaipur",description:"India's royal land of forts, palaces, deserts, crafts and folk traditions.",image:"https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1000&q=85",bestTime:"October – March"},
+  {name:"Kerala",capital:"Thiruvananthapuram",description:"A lush southern state of backwaters, hills, beaches and performing arts.",image:"https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=85",bestTime:"October – March"},
+  {name:"Gujarat",capital:"Gandhinagar",description:"A vibrant western state famous for the Rann, temples, textiles and Garba.",image:"https://images.unsplash.com/photo-1624638760852-8ede1666c7f4?auto=format&fit=crop&w=1000&q=85",bestTime:"November – February"},
+  {name:"Tamil Nadu",capital:"Chennai",description:"Home to monumental temples, classical dance and a rich culinary heritage.",image:"https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1000&q=85",bestTime:"November – February"}
+];
